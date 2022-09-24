@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote name="moto-common"
-        fetch="https://github.com/moto-common/" revision="13" />
+        fetch="https://github.com/moto-common/" revision="12" />
 
     <!-- Device Trees -->
     <project path="device/motorola/common" name="android_device_motorola_common"
