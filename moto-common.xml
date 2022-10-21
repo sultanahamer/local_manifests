@@ -1,91 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="moto-common"
-        fetch="https://github.com/moto-common/" revision="12" />
-
+    <remote name="sultanahamer"
+        fetch="https://github.com/sultanahamer/" revision="13" />
     <!-- Device Trees -->
     <project path="device/motorola/common" name="android_device_motorola_common"
-        remote="moto-common"/>
-    <!-- SM4350 (5.4) -->
-    <project path="device/motorola/sm4350-common-kernel" name="android_device_motorola_sm4350-common-kernel"
-        remote="moto-common"/>
-    <project path="device/motorola/sm4350-common" name="android_device_motorola_sm4350-common"
-        remote="moto-common"/>
-    <project path="device/motorola/osaka-kernel" name="android_device_motorola_osaka-kernel"
-        remote="moto-common"/>
-    <project path="device/motorola/osaka" name="android_device_motorola_osaka"
-        remote="moto-common"/>
+        remote="sultanahamer" revision="lineage-19.1"/>
     <!-- SM4250 (4.19) -->
     <project path="device/motorola/sm4250-common" name="android_device_motorola_sm4250-common"
-        remote="moto-common"/>
-    <project path="device/motorola/sm4250-common-kernel" name="android_device_motorola_sm4250-common-kernel"
-        remote="moto-common"/>
-    <project path="device/motorola/borneo" name="android_device_motorola_borneo"
-        remote="moto-common"/>
-    <project path="device/motorola/caprip" name="android_device_motorola_caprip"
-        remote="moto-common"/>
-    <project path="device/motorola/guamna" name="android_device_motorola_guamna"
-        remote="moto-common"/>
-    <!-- SM6125 (4.14) -->
-    <project path="device/motorola/amogus-kernel" name="android_device_motorola_amogus-kernel"
-        remote="moto-common"/>
-    <project path="device/motorola/amogus" name="android_device_motorola_amogus"
-        remote="moto-common"/>
+        remote="sultanahamer" />
+    <project path="kernel/motorola/msm-4.19" name="android_kernel_motorola_msm-4.19"
+        remote="sultanahamer" />
+    <!--  Caprip's 12 and 13 are at same commit so doesn't matter much -->
+    <project path="device/motorola/caprip" name="android_device_motorola_capri_fork"
+        remote="sultanahamer" revision="lineage-19.1"/>
 
-    <!-- Vendor Trees -->
     <project path="vendor/motorola/common" name="android_vendor_motorola_common"
-        remote="moto-common"/>
-    <!-- SM4350 (5.4) -->
-    <project path="vendor/motorola/sm4350-common" name="android_vendor_motorola_sm4350-common"
-        remote="moto-common"/>
-    <project path="vendor/motorola/osaka" name="android_vendor_motorola_osaka"
-        remote="moto-common"/>
+        remote="sultanahamer" revision="12"/>
     <!-- SM4250 (4.19) -->
     <project path="vendor/motorola/sm4250-common" name="android_vendor_motorola_sm4250-common"
-        remote="moto-common"/>
-    <project path="vendor/motorola/borneo" name="android_vendor_motorola_borneo"
-        remote="moto-common"/>
-    <project path="vendor/motorola/caprip" name="android_vendor_motorola_caprip"
-        remote="moto-common"/>
-    <project path="vendor/motorola/guamna" name="android_vendor_motorola_guamna"
-        remote="moto-common"/>
-    <!-- SM6125 (4.14) -->
-    <project path="vendor/motorola/amogus" name="android_vendor_motorola_amogus"
-        remote="moto-common"/>
-
+        remote="sultanahamer"/>
+    <!--  Caprip's 12 and 13 are at same commit so doesn't matter much -->
+    <project path="vendor/motorola/caprip" name="android_vendor_motorola_capri_fork"
+        remote="sultanahamer" revision="lineage-19.1"/>
     <!-- Supporting Repos -->
     <!-- QCOM Common -->
     <project path="device/qcom/common" name="android_device_qcom_common"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="vendor/qcom/common" name="android_vendor_qcom_common"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <!-- HALs -->
-    <project path="vendor/qcom/opensource/audio/sm8150" name="platform_vendor_qcom_opensource_audio_sm8150"
-        remote="moto-common" revision="master" />
     <project path="vendor/qcom/opensource/audio/sm8250" name="platform_vendor_qcom_opensource_audio_sm8250"
-        remote="moto-common" revision="master" />
-    <project path="vendor/qcom/opensource/audio/sm8350" name="platform_vendor_qcom_opensource_audio_sm8350"
-        remote="moto-common" revision="master" />
-    <project path="vendor/qcom/opensource/display/sm8150" name="platform_vendor_qcom_opensource_display_sm8150"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="vendor/qcom/opensource/display/sm8250" name="platform_vendor_qcom_opensource_display_sm8250"
-        remote="moto-common" revision="master" />
-    <project path="vendor/qcom/opensource/display/sm8350" name="platform_vendor_qcom_opensource_display_sm8350"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="vendor/qcom/opensource/display-commonsys-intf" name="platform_vendor_qcom_opensource_display-commonsys-intf"
-        remote="moto-common" revision="master" />
-    <project path="vendor/qcom/opensource/media/sm8150" name="platform_vendor_qcom_opensource_media_sm8150"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="vendor/qcom/opensource/media/sm8250" name="platform_vendor_qcom_opensource_media_sm8250"
-        remote="moto-common" revision="master" />
-    <project path="vendor/qcom/opensource/media/sm8350" name="platform_vendor_qcom_opensource_media_sm8350"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <!-- Misc -->
     <remove-project name="LineageOS/android_vendor_qcom_opensource_interfaces"/>
     <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="vendor/qcom/opensource/thermal" name="platform_vendor_qcom_opensource_thermal"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
     <project path="device/sony/sepolicy" name="android_device_sony_sepolicy"
-        remote="moto-common" revision="master" />
+        remote="sultanahamer" revision="master" />
 </manifest>
+
